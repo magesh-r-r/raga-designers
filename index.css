@@ -191,22 +191,27 @@ body {
 }
 
 @media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
   .nav ul {
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    background: white;
-    border-radius: 6px;
-    padding: 1rem;
     display: none;
   }
 
   .nav.open ul {
-    display: flex;
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
   }
 
-  .menu-toggle {
-    display: block;
+  .nav.open ul li {
+    margin: 10px 0;
   }
 }
